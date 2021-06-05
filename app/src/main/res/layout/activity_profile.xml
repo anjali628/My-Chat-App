@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="#075E54"
+        android:id="@+id/toolbarofviewprofile"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/backbuttonofviewprofile"
+                android:tint="@color/white"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+
+                >
+
+            </ImageButton>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Profile"
+                android:layout_toRightOf="@id/backbuttonofviewprofile"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/myapptext"
+
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/viewusername"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/viewuserimage"
+        app:cardCornerRadius="130dp"
+        android:layout_centerHorizontal="true"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/userprofile"
+            android:id="@+id/viewuserimageinimageview"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/logoofviewprofile"
+        android:src="@drawable/ic_baseline_person_24"
+        app:tint="#716E6E"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@id/viewusername"
+        android:layout_marginLeft="-60dp"
+        >
+
+    </ImageView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textCapWords"
+        android:hint="Enter Your Name Here"
+        android:layout_centerInParent="true"
+        android:id="@+id/viewusername"
+        android:clickable="false"
+        android:enabled="false"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_centerHorizontal="true"
+
+        >
+
+    </EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/movetoupdateprofile"
+        android:layout_below="@id/viewusername"
+        android:textColor="#303030"
+        android:text="Want To Update Your Profile ?">
+
+    </TextView>
+
+
+
+</RelativeLayout>
